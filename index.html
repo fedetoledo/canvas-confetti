@@ -8,11 +8,22 @@
 		body {
 			margin: 0; padding: 0; overflow: hidden;
 		}
+		.launch-btn {
+			background: fff;
+			border:  none;
+			padding: 12px;
+			border-radius: 8px;
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
 	</style>
 </head>
 <body>
 
-	<button onclick="launchConfetti()">Launch confetti!</button>
+	<button class="launch-btn" onclick="launchConfetti()">Launch confetti!</button>
 
 	<!-- <canvas id="confetti-container"></canvas> -->
 	<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>

@@ -30,10 +30,10 @@ class Particle {
 	}
 
 	addMotion() {
-		this.spinningSpeed = 0.5 + Math.sin(this.velocity * 10) * 0.5;
+		// this.spinningSpeed = 0.5 + Math.sin(this.velocity * 10) * 0.5;
 
 		translate(this.position.x, this.position.y);
-		scale(1, this.spinningSpeed)
+		// scale(1, this.spinningSpeed)
 		rotate(this.velocity / 2);
 
 		noStroke();
